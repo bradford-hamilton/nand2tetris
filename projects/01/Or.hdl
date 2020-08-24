@@ -19,5 +19,7 @@ CHIP Or {
     OUT out;
 
     PARTS:
-    // Your code here
+    Not(in=a, out=nota);
+    Not(in=b, out=notb);
+    Nand(a=nota, b=notb, out=out);
 }
